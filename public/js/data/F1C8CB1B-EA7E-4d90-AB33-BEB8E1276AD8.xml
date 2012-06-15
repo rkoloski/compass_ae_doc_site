@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("2.10:1", "", "erp_pricing_top_level", "EARoot/EA2/EA10/EA172.htm", "175.png", "33", "0", "", "Logical diagram0","{A05D365E-9EC9-47f6-BE71-47349331B329}");
+tocTab[tocTab.length] = new Array("2.10:2", "", "erp_pricing_and_fees", "EARoot/EA2/EA10/EA174.htm", "175.png", "34", "0", "", "Logical diagram0","{301B66F2-74D5-4b9b-8235-EB77A72422F6}");
+tocTab[tocTab.length] = new Array("2.10:3", "", "OfferAudience", "EARoot/EA2/EA10/EA181.htm", "5.png", "258", "0", "", "Class0","{E3FF6680-9324-4138-8165-201B5C0056DF}");
+tocTab[tocTab.length] = new Array("2.10:4", "", "OfferEligibilityRules", "EARoot/EA2/EA10/EA182.htm", "5.png", "255", "0", "", "Class0","{7B7F965A-B4D3-4f71-8EF6-682910CFB9D8}");
+tocTab[tocTab.length] = new Array("2.10:5", "", "PricingPlanCalculation", "EARoot/EA2/EA10/EA183.htm", "5.png", "253", "0", "", "Class0","{2E05753E-BE62-4e18-B027-3DD01CDDAB6B}");
+tocTab[tocTab.length] = new Array("2.10:6", "", "PricingPlanEligibilityRules", "EARoot/EA2/EA10/EA184.htm", "5.png", "252", "0", "", "Class0","{6043A3F0-925C-4be3-AF5A-4C72A456A856}");
+tocTab[tocTab.length] = new Array("2.10:7", "", "ProductOffer", "EARoot/EA2/EA10/EA185.htm", "5.png", "254", "0", "", "Class0","{0A40E414-AED4-435f-BA23-D9DBE703BADA}");
+tocTab[tocTab.length] = new Array("2.10:8", "", "RuleBasedPricingPlan", "EARoot/EA2/EA10/EA186.htm", "5.png", "251", "0", "", "Class0","{C4636D00-54F2-4a9c-8875-A35AE3C55280}");
+tocTab[tocTab.length] = new Array("2.10:9", "", "RulesBasedOffer", "EARoot/EA2/EA10/EA187.htm", "5.png", "257", "0", "", "Class0","{F9B18C97-258D-4003-9EE9-2FEB0EF02178}");
+tocTab[tocTab.length] = new Array("2.10:10", "", "SimpleOffer", "EARoot/EA2/EA10/EA188.htm", "5.png", "256", "0", "", "Class0","{9049EEBF-AE4B-422f-97D9-16DAF71F37A6}");
+tocTab[tocTab.length] = new Array("2.10:11", "", "valid_payment_methods", "EARoot/EA2/EA10/EA189.htm", "5.png", "267", "0", "", "Class0","{69D58290-05E5-42f8-9BDA-A48869881E5C}");

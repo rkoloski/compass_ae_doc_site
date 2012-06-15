@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">  : public   text</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">11/21/2011 10:45:30 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">11/21/2011 10:50:06 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Richard Koloski</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{1A6C7543-CC81-4a45-9379-FFD071195A2D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA7.htm">engines at a glance</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;b&gt;ERP Engines At a Glance&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/b&gt;Following is a list of major CompassAE engines and a brief description of the function of each. The list starts with business services built on erp_base_svcs.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Business Archetypes and Related Services&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_agreements:&lt;/b&gt; Agreements&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Agreements Engine implements model classes for storing Contracts and Agreements data, including AgreementItems, which represent the terms of the Agreement. Contracts are a special case of Agreements, specifically Agreements which are legal in nature. Agreements and Terms are often used as the execution context of a rules engine to govern other behaviors of a system.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_txns_and_accts:&lt;/b&gt; Transactions and Accounts&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Transactions and Accounts Engine implements the root classes for adding business transactions and accounts to parties. The key marker interface classes here are BizTxnEvent, which represents a common interface for all manner of management accounting transactions, and BixTxnAcctRoot, which is the root class for the accounting of transactions. CompassAE uses separate structures for management and financial accounting. &lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_products:&lt;/b&gt; Products&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Products Engine implements ProductType and ProductInstance, as well as a number of classes to support product catalog-type functions and search/shopping scenarios.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_inventory:&lt;/b&gt; Inventory&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Inventory Engine in CompassAE implements a set of models for storing information about the availability and location of ProductTypes and optionally Product Instances. It is also the root for yield and revenue management requirements to segment and allocate inventory for different purposes.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_orders:&lt;/b&gt; Orders&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Orders Engine in CompassAE implements models for Orders, Order Items and Order status tracking. It also houses models for charge lines associated with Orders (although it could be argued that this functionality should reside in Commerce).&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_commerce:&lt;/b&gt; Commerce&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The CompassAE Commerce Engine uses the engines that implement Parties, Products and Orders, and adds the ability to conduct commerce. It implements a pricing engine, fees, payment gateways.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_invoicing:Invoicing and Bill Payments&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The CompassAE Invoicing Engine extends several foundational engines including&lt;b&gt;erp_txns_and_accts &lt;/b&gt;and&lt;b&gt;erp_commerce &lt;/b&gt;by increasing the flexibility with which payments can be applied. It adds the ability to issue invoices and apply payments to &lt;b&gt;invoices, invoice_items &lt;/b&gt;and &lt;b&gt;financial_accounts&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_financial_accounting:&lt;/b&gt; Financial Accounting&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The CompassAE Financial Accounting Engine implements the basic classes that allow either interface or implementation of general ledger, accounts payable and accounts receivable modules. This module is experimental at this stage.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Technical Services&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The services listed below are technical services which are available to all CompassAE business engines.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_rules:&lt;/b&gt; Rules&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Rules Module of CompassAE includes classes which act as helpers in externalizing the execution context of CompassAE value objects for processing by a rules engine. It also includes an integration with Ruleby, which is a pure ruby implementation of the forward chaining Rete algorithm.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_search:&lt;/b&gt; Search&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/b&gt;The CompassAE Search Engine provides functionality to facilitate both dimensional and index-based searches. CompassAE by default will search for an instance of SOLR/Sunspot and use it if it is available, otherwise it will attempt to use SQL to implement content searches. This engine also contains a demonstration of how to implement a denormalized search fact table using the Party entity.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;erp_workflow:&lt;/b&gt; CompassAE Workflow Engine&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;/b&gt;The CompassAE Workflow engine provides the framework with a powerful but straightforward business workflow engine which can be used to model both automated (&quot;workflow-in-the-small&quot;), and manual (&quot;workflow-in-the-large&quot;) business processes. As with all major externalization engines in CompassAE, the execution context is available to both the internal CompassAE Workflow Engine as well as open source and commercial alternatives.&lt;br /&gt;&lt;/p&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

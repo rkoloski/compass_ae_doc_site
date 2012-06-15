@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font size="3">
+<b>Introduction</b></font></p>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font color="#000000" size="3">
+<b>CompassAE Technology Foundations</b></font></p>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+CompassAE is a fusion of solutions from several bodies of work considered foundational:</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; ">&nbsp;&nbsp;</div>
+<ul style="margin-top: 0mm; margin-bottom: 0mm; list-style-type: disk; ">
+<li style="margin-left: 36pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  "><font size="3">
+Enterprise Archetypes and Data Model Patterns</font></li>
+<li style="margin-left: 36pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  "><font size="3">
+Rapid and Agile Development Methods Support</font></li>
+<li style="margin-left: 36pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  "><font size="3">
+Modern Deployment Technologies: The Cloud, Web and Device Enablement</font></li>
+</ul>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+The goal of this particular synthesis is to improve the trade-offs between delivery velocity on the 
+one hand, and on the other, flexibility at the application and enterprise architecture levels - 
+between short and long-term concerns facing a design team.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="line-height: 115%; "><font color="#000000">
+<img src="EAID_7B7C63BC_58F0_497f_99E3_55401E6C6BF7_1.PNG" width="700" height="418" border="0" alt="graphic"/></font></div>
+<p align="center" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:3.52mm; margin-bottom:0.70mm;line-height: 115%; "><font size="2">
+<b>CompassAE Application Architecture</b></font></p>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font size="3">
+<b><br />
+</b></font></p>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font size="3">
+<b>Enterprise Archetypes and Data Model Patterns</b></font></p>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+CompassAE started as a series of tutorials describing implementation options for Len 
+Silverston&rsquo;s Data Model Resource Books, and later incorporated ideas from Jim Arlow and Ila 
+Neustadt&rsquo;s Entperise Archetypes. Example implementation alternatives and code from these 
+tutorials grew and became useful as a starting point for development projects in a variety of 
+circumstances.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+The assumption was that starting with tested implementations of these mature models would 
+offset the tendency to simplify the data and object-relational layers of project work to meet 
+deadlines.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+Simple user interfaces were then built to allow teams to see how their data would look organized 
+according to the patterns. This helped teams visualize, for example, how customer and supplier 
+data could be stored using Business Party, Role and Relationship structures instead of creating 
+a Customer or Supplier table with fixed roles and relationships.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font size="3">
+<b>Rapid and Agile Development Methods Support</b></font></p>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+Using patterns in general represents an orientation towards upfront investment in longer-term 
+stability and adaptability as opposed to quick results. </font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+The time horizons imposed on IT by the pace, risk tolerance and attention span of today&rsquo;s 
+businesses make this a very difficult sell for architects who are advocating for the long term.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+CompassAE&rsquo;s application infrastructure started by simply using various scaffolding techniques 
+and the velocity achievable through the Rails framework. Prototypes evolved in parallel from the 
+data layer using scaffolds, and the UI layer using standard user-centered agile techniques. Rails 
+plugins and rubygems were later added to provide default implementations of common 
+application and technical services, such as authentication/authorization, image processing and 
+search indexing. </font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+Over the course of time, an application architecture began to take shape that organized and 
+extended these facilities, and added a container and component model. The hope was to allow 
+an implementation to follow a path that seems to offer reasonable trade-offs between short and 
+long-term benefits. A second goal that has been pursued is that the framework should &ldquo;get out of 
+the way&rdquo; if an implementer chooses a different approach in some areas than the framework 
+designers chose. </font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<p style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:4.22mm; margin-bottom:0.70mm;line-height: 115%; "><font size="3">
+<b>Modern Deployment Technologies: The Cloud, Web and Device Enablement</b></font></p>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+If patterns-orientation and model-driven architecture (MDA) are the buzzwords of the moment for 
+architects and designers, and Agile Development is today&rsquo;s goal for project sponsors and their 
+teams - then the Cloud, Web and Device Enablement is the rage for entrepreneurs and 
+executives at all levels. </font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+This would be interesting enough, except that our belief is that these terms and several other key 
+developments aren&rsquo;t empty hype. They refer to a fundamental shift in deployment topology that is 
+on the scale of disruption caused by the Client/Server revolution and even the Web itself. 
+Frankly, we like these kinds of disruptions. They keep the world interesting for us techies.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+So we started semi-early on tracking the trends associated with these shifts and embraced the 
+idea of HTML5 using Extjs and Sencha for UI technologies and REST as a design principle for 
+web services. We later began to introduce multi-tenant facilities into the core framework. All of 
+this is still very active in the framework development work.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+However, this is a point where it makes some sense to go back to the framework&rsquo;s initial 
+foundation for a coda.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+For the &ldquo;programmable web&rdquo; to evolve towards the &ldquo;interconnected, component-based and 
+device-enabled cloud&rdquo;, there has to be a Rosetta Stone of sorts. The domain language of people, 
+agreements they sign, orders they place and products they buy will need to include a set of base 
+canonical models that trend towards stability. We think that the Enterprise Archetypes and Data 
+Model Patterns work represents the best starting point for such a Rosetta Stone in existence 
+today, and it has the benefit of being published, easily accessible, current and actively evolving, 
+as well as being built for extension and customization where unique problems are still yet to be 
+solved.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+These ideas are DNA that shapes the realization of CompassAE.</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;line-height: 115%; "><font size="3">
+<br />
+</font></div>
+<div align="left" align="left" style="margin-left:13mm; margin-right:0mm; text-indent:0mm; margin-top:0.00mm; margin-bottom:0.00mm;">&nbsp;&nbsp;</div>
+</body>
+</html>

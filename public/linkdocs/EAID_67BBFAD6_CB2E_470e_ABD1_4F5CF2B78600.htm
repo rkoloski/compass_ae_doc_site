@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<div align="left" align="left"><font size="1">
+<b>The Core CompassAE Engines At A Glance (&ldquo;The Core Four&rdquo;)</b></font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+There are four foundational librariesin CompassAEon which the rest of the system is based. Each plugin is 
+prepended with &lsquo;erp_*&rsquo; so they are easy to locate.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+<b>erp_base_erp_svcs:</b> contains an implementation of the ubiquitous &ldquo;party model&rdquo; for managing people, 
+organizations, roles, relationships and contact information. The models in this library are designed to be useful in 
+a variety of circumstances, including headless SOA implementations and batch operations.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+For this reason, the base library has very few dependencies. We opt instead to add incremental functionality to 
+these models using ruby&rsquo;s open classes and Rails&rsquo; plugin techniques. More on this later.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+<b>erp_tech_svcs:</b> this engine is implemented with the premise that services like logging, tracing and encryption 
+would likely already exist in many organizations, so they are factored here so they can easily be re-implemented. 
+There are default implementations here, and we track several excellent Rails projects as potential 
+implementations of services like security and content/digital asset mgt.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+The principle here is that it should be straightforward to extend or even swap out a default implementation of these 
+services with existing implementations to suit a particular customer. In addition to this, CompassAE deployments 
+should make it easy to:</font></div>
+<div align="left" align="left">&nbsp;&nbsp;</div>
+<ul style="margin-top: 0mm; margin-bottom: 0mm; list-style-type: disk; ">
+<li style="margin-left: -9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  "><p style="margin-top: 0pt; margin-bottom: 0pt; "><font size="1">
+start with a Ruby-only or minimally native-dependent version of a service</font></p>
+</li>
+<li style="margin-left: -9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  "><p style="margin-top: 0pt; margin-bottom: 0pt; "><font size="1">
+provide access to an open source, &ldquo;enterprise&rdquo; version of the same service</font></p>
+</li>
+<li style="margin-left: -9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  "><p style="margin-top: 0pt; margin-bottom: 0pt; "><font size="1">
+allow for customers to plug into investments they have made in commercial products that implement the 
+service</font></p>
+</li>
+</ul>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+An example of this is business rules processing. By default, CompassAE uses a pure Ruby implementation of the 
+forward-chaining Rete algorithm called Ruleby. Compass also has a wrapper that allows implementers to plug 
+CompassAE into the JBoss Drools rules processing engine, which is an open source, enterprise class rules 
+processing engine. We provide an example Drools server in CompassAE called Axiom. This same wrapper API 
+can be used by organizations that have investments in the IBM/iLog JRules or Fair Isaac Blaze commercial rules 
+processing engines.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+<b>erp_dev_svcs:</b> this plugin exists to serve as a way to organize code that exists to support the development 
+process, but will not live in the running production code.</font></div>
+<div align="left" align="left"><font size="1">
+<br />
+</font></div>
+<div align="left" align="left"><font size="1">
+<b>erp_app:</b> provides an application infrastructure based on the Sencha/extjs UI framework, as well as several 
+utilities and example applications. It houses the core application container framework and component model 
+infrastructure that play a key role in the RAD/Agile orientation of CompassAE.</font></div>
+</body>
+</html>

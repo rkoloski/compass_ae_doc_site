@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("2.3:1", "", "app", "EARoot/EA2/EA3/EA92.htm", "178.png", "23", "0", "", "Component diagram0","{DA8527EA-2DEA-4513-B429-8DDDA1BA5883}");
+tocTab[tocTab.length] = new Array("2.3:2", "", "client", "EARoot/EA2/EA3/EA94.htm", "5.png", "188", "0", "", "Class0","{536F7EB2-DC65-4a24-8627-9B1665AB0ED8}");
+tocTab[tocTab.length] = new Array("2.3:3", "", "client_preference", "EARoot/EA2/EA3/EA95.htm", "5.png", "189", "0", "", "Class0","{9DF72307-21D7-4ce5-9A99-F2A6BA6A959D}");
+tocTab[tocTab.length] = new Array("2.3:4", "", "desktop", "EARoot/EA2/EA3/EA96.htm", "5.png", "187", "0", "", "Class0","{2559DACE-9964-4d75-96D7-56FE74684417}");
+tocTab[tocTab.length] = new Array("2.3:5", "", "tree_menu_node_def", "EARoot/EA2/EA3/EA97.htm", "5.png", "190", "0", "", "Class0","{AE6A0C34-DFA2-47bc-9ED2-4C87DD229162}");
