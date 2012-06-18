@@ -1,4 +1,6 @@
 tocTab[tocTab.length] = new Array("1.1", "1", "Introduction", "EARoot/EA1/EA4.htm", "4.png", "", "", "{F4CE337D-DC9C-42e8-9ADB-74D2D39A1644}", "Package");
-tocTab[tocTab.length] = new Array("1.2", "1", "CompassAE Design", "EARoot/EA1/EA5.htm", "4.png", "", "", "{190410A9-DB4B-4a26-B491-028EF13B9A6E}", "Package");
+tocTab[tocTab.length] = new Array("1.2", "1", "CompassAE Design Principles", "EARoot/EA1/EA5.htm", "4.png", "", "", "{190410A9-DB4B-4a26-B491-028EF13B9A6E}", "Package");
 tocTab[tocTab.length] = new Array("1.3", "1", "CompassAE Implementation Patterns", "EARoot/EA1/EA6.htm", "4.png", "", "", "{3404E73D-FDB3-4a45-BFC3-D84E4BAC203E}", "Package");
-tocTab[tocTab.length] = new Array("1.4", "1", "Documents", "EARoot/EA1/EA7.htm", "4.png", "", "", "{B86F76FD-3E8D-43ad-8D07-EFC115BD55BA}", "Package");
+tocTab[tocTab.length] = new Array("1.4", "1", "CompassAE Coding Guidelines", "EARoot/EA1/EA7.htm", "4.png", "", "", "{E8EA7E66-8C0D-4a67-9339-96EFDA6D68B5}", "Package");
+tocTab[tocTab.length] = new Array("1.5", "1", "CompassAE Engine Details", "EARoot/EA1/EA8.htm", "4.png", "", "", "{A00448A7-5AD0-4312-B51C-336AF578F86C}", "Package");
+tocTab[tocTab.length] = new Array("1.6", "1", "Embedded Resources", "EARoot/EA1/EA9.htm", "4.png", "", "", "{B86F76FD-3E8D-43ad-8D07-EFC115BD55BA}", "Package");
