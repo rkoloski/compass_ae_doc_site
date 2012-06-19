@@ -18,7 +18,7 @@ B.red {
 	text-decoration: none;
 }
 BODY {
-	background-color: #FFFFFF;
+	background-color: #EEEEEE;
 	font-family: "Arial", sans-serif;
 	font-size: 12px;
 	height: 100%;
@@ -27,7 +27,6 @@ BODY {
 }
 BODY.Content {
 	background-color: #FFFFFF;
-	font-family: "Arial", sans-serif;
 }
 CODE {
 	color: #990000;
@@ -253,6 +252,9 @@ UL {
 }
 .IndexHeader {
 	background-color: #FFFFFF;
+	border-bottom: 1px solid #92A1AF;
+	background-image: url(../images/hbg.gif);
+	background-repeat: repeat-x;
 	height: 60px;
 	margin: 0px;
 }
@@ -260,7 +262,6 @@ UL {
 	margin: 0px;
 	margin-bottom: -5px;
 	padding: 0px;
-	border: none;
 }
 .IndexTitle {
 	color: #405E8D;

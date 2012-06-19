@@ -1,1 +1,2 @@
 tocTab[tocTab.length] = new Array("1.2:1", "", "CompassAE Design Intro", "EARoot/EA1/EA2/EA21.htm", "188.png", "116", "0", "", "Custom diagram0","{FDD49A7F-9868-4110-9DE8-789A22510913}");
+tocTab[tocTab.length] = new Array("1.2:2", "", "Artifact1", "EARoot/EA1/EA2/EA25.htm", "82.png", "641", "0", "", "Artifact0","{BE1DEE11-EEAE-491f-AF6E-F41035593A01}");

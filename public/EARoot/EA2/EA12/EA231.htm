@@ -61,7 +61,7 @@ function initPage(src) {
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA227.htm">payment_applications</a></td>
+			<td class="ObjectDetailsValue"><a href="EA229.htm">payment_applications</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">Here is how to extend a class to allow payments to reference instances of it. In business terms, this is how to allow a class to represent &quot;things that can be paid for&quot;.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;FinancialTxnAccount.class_eval do&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; #Connect the entity to a polymorphic payment application.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; #The effect&#160; is to allow payments to be &quot;applied_to&quot; this entity&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; has_many&#160;&#160;&#160; :payment_applications, :as =&gt; :payment_applied_to&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160; &lt;br /&gt;&lt;/p&gt;&lt;p&gt;end&lt;br /&gt;&lt;/p&gt;</div>
